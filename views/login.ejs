@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<style>
+input[type=text],input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(87, 226, 217);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(87, 188, 217);
+}
+
+div {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+</style>
+
+	</head>
+	
+	<body>
+		<% include partials/navbar.ejs %>
+		<br>
+		<br>
+
+	
+
+	
+<div>
+  
+<form id="loginform" method="POST" action="/login">
+	<label for="userid">User ID</label> 
+	<input type="text" name="userid" placeholder="Ex: sanuj96" 			required/>
+	<label for="password">Password :</label>		
+	<input type="Password" name="password">
+	<input type="submit" value="Login" id="loginButton" >
+</form>
+
+</div>
+	
+	</body>
+</html>

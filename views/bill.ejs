@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	</head>
+	
+	<body class="w3-light-grey w3-content" style="max-width:1600px">
+		<% include partials/navbar.ejs %>
+		<br>
+		<br>
+
+			<h2>Congrats Your Order has been successfully placed</h2>
+
+			<h>Customer ID :<%=Obj.username %></h>
+			<br> 
+			<h>Contact No :<%=Obj.mobile %></h>
+			<br>
+			<h>Delivery Address :<%=Obj.address %></h>
+			<br>
+			<h>Total Amount : <%= Obj.cost %></h>
+			<br>
+			<h3>Summery of Your Purchase</h3>
+
+	
+	
+	</body>
+</html>
